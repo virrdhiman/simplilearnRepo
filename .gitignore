@@ -1,0 +1,13 @@
+﻿.env
+.env.*
+!.env.example
+node_modules/
+.venv/
+__pycache__/
+.cursor/
+.DS_Store
+Thumbs.db
+*.pyc
+.next/
+dist/
+build/
