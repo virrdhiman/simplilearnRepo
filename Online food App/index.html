@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="Savorly makes ordering fresh restaurant food simple and delightful."
+    />
+
+    <title>Savorly | Food Delivery</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="site-header">
+
+      <a
+        class="brand"
+        href="#home"
+        aria-label="Savorly home"
+      >
+        savorly<span>.</span>
+      </a>
+
+      <nav
+        class="nav-links"
+        aria-label="Primary navigation"
+      >
+        <a href="#menu">Menu</a>
+        <a href="#how-it-works">How it works</a>
+        <a
+          href="#orders"
+          id="orders-link"
+        >
+          My orders
+        </a>
+      </nav>
+
+      <div class="header-actions">
+
+        <!-- Profile -->
+        <button
+          class="icon-button profile-button"
+          id="profile-button"
+          aria-label="Open profile"
+        >
+          JD
+        </button>
+
+        <!-- Cart -->
+        <button
+          class="cart-button"
+          id="cart-button"
+          aria-label="Open cart"
+        >
+          <span class="cart-icon">🛍</span>
+          Cart
+          <span
+            class="cart-count"
+            id="cart-count"
+          >
+            0
+          </span>
+        </button>
+
+      </div>
+    </header>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+         ===================================================== -->
+
+    <main>
+
+      <!-- ===================================================
+           HERO SECTION
+           =================================================== -->
+
+      <section
+        class="hero"
+        id="home"
+      >
+
+        <div class="hero-copy">
+
+          <p class="eyebrow">
+            YOUR FAVORITE FLAVORS, DELIVERED
+          </p>
+
+          <h1>
+            Good food.<br />
+            <em>Good mood.</em>
+          </h1>
+
+          <p class="hero-text">
+            From our kitchen to your doorstep,
+            find a little joy in every bite.
+          </p>
+
+          <a
+            class="primary-button"
+            href="#menu"
+          >
+            Explore the menu
+            <span>→</span>
+          </a>
+
+          <div class="hero-meta">
+
+            <div>
+              <strong>4.9</strong>
+              <span>★★★★★</span>
+              <small>2k+ happy foodies</small>
+            </div>
+
+            <div>
+              <strong>25 min</strong>
+              <small>average delivery</small>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- Hero Image -->
+
+        <div class="hero-image-wrap">
+
+          <div class="sun-shape"></div>
+
+          <img
+            class="hero-image"
+            src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1000&q=85"
+            alt="Stacked gourmet burger and fries"
+          />
+
+          <div class="delivery-note">
+
+            <span>⚡</span>
+
+            <div>
+              <strong>Fresh & fast</strong>
+              <small>Made just for you</small>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ===================================================
+           MENU SECTION
+           =================================================== -->
+
+      <section
+        class="menu-section"
+        id="menu"
+      >
+
+        <div class="section-heading">
+
+          <div>
+
+            <p class="eyebrow">
+              FIND YOUR CRAVING
+            </p>
+
+            <h2>
+              Something delicious<br />
+              <em>for everyone.</em>
+            </h2>
+
+          </div>
+
+
+          <!-- Search -->
+
+          <label class="search-box">
+
+            <span>⌕</span>
+
+            <input
+              id="search-input"
+              type="search"
+              placeholder="Search the menu"
+              aria-label="Search the menu"
+            />
+
+          </label>
+
+        </div>
+
+
+        <!-- Categories -->
+
+        <div
+          class="categories"
+          id="category-list"
+          aria-label="Menu categories"
+        ></div>
+
+
+        <!-- Food Cards -->
+
+        <div
+          class="food-grid"
+          id="food-grid"
+        ></div>
+
+      </section>
+
+
+      <!-- ===================================================
+           HOW IT WORKS
+           =================================================== -->
+
+      <section
+        class="steps-section"
+        id="how-it-works"
+      >
+
+        <div>
+
+          <p class="eyebrow">
+            SIMPLE AS 1, 2, 3
+          </p>
+
+          <h2>
+            Order joy in<br />
+            <em>three easy steps.</em>
+          </h2>
+
+        </div>
+
+
+        <div class="steps">
+
+          <!-- Step 01 -->
+
+          <article>
+
+            <span class="step-number">
+              01
+            </span>
+
+            <span class="step-icon">
+              🍽️
+            </span>
+
+            <h3>
+              Choose your favorites
+            </h3>
+
+            <p>
+              Explore a menu made with care,
+              and pick what makes you happy.
+            </p>
+
+          </article>
+
+
+          <!-- Step 02 -->
+
+          <article>
+
+            <span class="step-number">
+              02
+            </span>
+
+            <span class="step-icon">
+              🛍️
+            </span>
+
+            <h3>
+              We get cooking
+            </h3>
+
+            <p>
+              Your order is freshly prepared
+              by our wonderful kitchen team.
+            </p>
+
+          </article>
+
+
+          <!-- Step 03 -->
+
+          <article>
+
+            <span class="step-number">
+              03
+            </span>
+
+            <span class="step-icon">
+              🛵
+            </span>
+
+            <h3>
+              Enjoy every bite
+            </h3>
+
+            <p>
+              Relax while we bring your delicious
+              meal right to your door.
+            </p>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- ===================================================
+           ORDERS SECTION
+           =================================================== -->
+
+      <section
+        class="orders-section"
+        id="orders"
+      >
+
+        <p class="eyebrow">
+          YOUR RECENTLY PLACED ORDERS
+        </p>
+
+        <h2>
+          Your orders
+        </h2>
+
+
+        <!-- Empty Orders State -->
+
+        <div
+          class="order-empty"
+          id="order-empty"
+        >
+
+          <span>🍜</span>
+
+          <p>
+            Your next delicious order will appear here.
+          </p>
+
+          <a href="#menu">
+            Browse menu
+          </a>
+
+        </div>
+
+
+        <!-- Orders generated by JavaScript -->
+
+        <div
+          class="orders-list"
+          id="orders-list"
+        ></div>
+
+      </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer>
+
+      <a
+        class="brand"
+        href="#home"
+      >
+        savorly<span>.</span>
+      </a>
+
+      <p>
+        Made with care, served with joy.
+      </p>
+
+      <p>
+        © 2026 Savorly
+      </p>
+
+    </footer>
+
+
+    <!-- =====================================================
+         CART SIDE PANEL
+         ===================================================== -->
+
+    <aside
+      class="side-panel"
+      id="cart-panel"
+      aria-label="Shopping cart"
+      aria-hidden="true"
+    >
+
+      <div class="panel-header">
+
+        <h2>
+          Your order
+        </h2>
+
+        <button
+          class="close-button"
+          data-close="cart-panel"
+          aria-label="Close cart"
+        >
+          ×
+        </button>
+
+      </div>
+
+
+      <!-- Cart Items -->
+
+      <div
+        class="cart-items"
+        id="cart-items"
+      ></div>
+
+
+      <!-- Empty Cart -->
+
+      <div
+        class="cart-empty"
+        id="cart-empty"
+      >
+
+        <span>🛍️</span>
+
+        <p>
+          Your cart is waiting for something tasty.
+        </p>
+
+      </div>
+
+
+      <!-- Cart Summary -->
+
+      <div
+        class="cart-summary"
+        id="cart-summary"
+      >
+
+        <div>
+          <span>Subtotal</span>
+          <strong id="subtotal">$0.00</strong>
+        </div>
+
+        <div>
+          <span>Delivery</span>
+          <strong id="delivery">$2.50</strong>
+        </div>
+
+        <div class="total">
+          <span>Total</span>
+          <strong id="total">$2.50</strong>
+        </div>
+
+        <button
+          class="checkout-button"
+          id="checkout-button"
+        >
+          Place order
+          <span>→</span>
+        </button>
+
+      </div>
+
+    </aside>
+
+
+    <!-- =====================================================
+         PROFILE SIDE PANEL
+         ===================================================== -->
+
+    <aside
+      class="side-panel profile-panel"
+      id="profile-panel"
+      aria-label="User profile"
+      aria-hidden="true"
+    >
+
+      <div class="panel-header">
+
+        <h2>
+          My profile
+        </h2>
+
+        <button
+          class="close-button"
+          data-close="profile-panel"
+          aria-label="Close profile"
+        >
+          ×
+        </button>
+
+      </div>
+
+
+      <div class="profile-content">
+
+        <div class="profile-avatar">
+          JD
+        </div>
+
+        <h3>
+          Jordan Davis
+        </h3>
+
+        <p>
+          jordan.davis@example.com
+        </p>
+
+        <hr />
+
+
+        <!-- Address -->
+
+        <div class="profile-detail">
+
+          <span>📍</span>
+
+          <div>
+
+            <strong>
+              Delivery address
+            </strong>
+
+            <p>
+              24 Willow Lane, Brooklyn
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- Payment -->
+
+        <div class="profile-detail">
+
+          <span>💳</span>
+
+          <div>
+
+            <strong>
+              Payment method
+            </strong>
+
+            <p>
+              Visa ending in 4242
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </aside>
+
+
+    <!-- =====================================================
+         OVERLAY
+         ===================================================== -->
+
+    <div
+      class="overlay"
+      id="overlay"
+    ></div>
+
+
+    <!-- =====================================================
+         TOAST NOTIFICATION
+         ===================================================== -->
+
+    <div
+      class="toast"
+      id="toast"
+      role="status"
+      aria-live="polite"
+    ></div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script src="app.js"></script>
+
+  </body>
+</html>
